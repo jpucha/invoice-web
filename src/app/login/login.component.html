@@ -1,0 +1,25 @@
+<div class="container  py-5">
+  <form class="mx-auto" style="max-width: 25rem;" #form="ngForm" (ngSubmit)="getLogin(form)">
+    <h1 class="mg-5 text-center ">
+        Inicio de sesión
+    </h1>
+
+    <div class="mb-3">
+      <label for="username">
+        Username:
+      </label>
+      <input id="username" name="username" class="form-control" [(ngModel)]="credentials.username"/>
+    </div>
+
+    <div class="mb-3">
+      <label for="password">
+        Password:
+      </label>
+      <input id="password" name="password" type="password" class="form-control" [(ngModel)]="credentials.password"/>
+    </div>
+
+    <div class="d-grid">
+      <button class="btn btn-lg btn-primary">Ingresar</button>
+    </div>
+  </form>
+</div>
